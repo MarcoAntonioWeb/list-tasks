@@ -1,0 +1,138 @@
+/*********** General Configuration *********/
+* {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #7f00ff  0%, #e100ff 100%);
+}
+/******* Configuration body **********/
+.container {
+    background: #ffffff;
+    width: 541px;
+    border-radius: 5px;
+    margin: 100px auto;
+    padding: 30px 20px;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#input-main {
+    font-size: 16px;
+    padding-left: 5px;
+    width: 342px;
+    height: 40px;
+    border: 2px solid rgba(209, 211, 212, 0.4);
+    border-radius: 5px;
+}
+
+#btn-add {
+    background: #4718b6;
+    height: 40px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+#btn-add:hover {
+    opacity: 0.8;
+    transition: 0.5s all;
+}
+
+#btn-add:active {
+    opacity: 0.4;
+}
+
+/****** will add tasks *********/
+#tasks {
+    width: 100%;
+    list-style: none;
+}
+
+.item-tasks {
+    margin-top: 30px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: relative;
+    padding: 20px 10px;
+}
+
+.fa-rocket {
+    color: #4718b6;
+    font-size: 1.3rem;
+}
+
+.fa-rocket:hover {
+    color: rgb(91, 91, 255);
+    transition: 0.5s;
+}
+
+.name-tasks {
+    color: #000000;
+    font-size: 15px;
+    padding-left: 50px;
+    font-size: 1.2rem;
+}
+
+.btn-done {
+    border: none;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.item-tasks:hover .btn-done {
+    opacity: 1;
+    transition: 1.5s;
+}
+
+
+.btn-delete {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.item-tasks:hover .btn-delete {
+    opacity: 1;
+    transition: 1.5s;
+}
+
+.fa-trash {
+    color: red;
+    font-size: 1.3rem;
+}
+
+.fa-trash:hover {
+    color: rgb(201, 12, 12);
+transition: 0.5s;
+}
+
+.concluded {
+    background: #d4f88d;
+    text-decoration: line-through;
+}
